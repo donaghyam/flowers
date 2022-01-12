@@ -16,8 +16,7 @@ const flowers = [
 console.log(flower.length)
 
 const addFlower = (flowerObject) => {
-    const lastIndex = flowers.length - 1
-    const lastFlower = flowers[lastIndex]
+    const lastFlower = flowers[flowers.length - 1]
     const maxId = lastFlower.id
     const newId = maxId + 1
     flowerObject.id = newId
